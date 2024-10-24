@@ -1,14 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal Streams - 20 Pristine Acres</title>
+    <meta name="description" content="Crystal Streams - 20 pristine acres featuring natural springs, caves, and waterfalls in the heart of the Ozarks.">
     <style>
-        /* Previous formal brochure styling remains the same */
         body {
             margin: 0;
             padding: 0;
             font-family: 'Arial', sans-serif;
-            background: white;
+            background: #f0f0f0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
+
         .page {
             width: 816px;
             height: 1056px;
@@ -16,12 +24,16 @@
             background: white;
             overflow: hidden;
             padding-bottom: 80px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            margin: 20px auto;
         }
+
         .hero-section {
             height: 320px;
             position: relative;
             overflow: hidden;
         }
+
         .hero-overlay {
             position: absolute;
             top: 0;
@@ -35,36 +47,214 @@
             flex-direction: column;
             justify-content: flex-end;
         }
+
         .main-content {
             display: grid;
             grid-template-columns: 60% 40%;
             gap: 20px;
             padding: 20px;
+            margin-bottom: 60px;
         }
+
         .feature-card {
             background: #f8f9fa;
             border-radius: 10px;
             padding: 20px;
             margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
+
         .photo-box {
             border-radius: 8px;
             overflow: hidden;
             margin: 10px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
+
         .photo-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 10px;
             margin: 15px 0;
         }
+
         h1 {
             font-size: 42px;
             margin: 0;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
-        /* Rest of the formal styling remains the same */
+
+        h2 {
+            font-size: 22px;
+            color: #2c3e50;
+            margin: 0 0 15px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #3498db;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: #2c3e50;
+            margin: 12px 0 8px 0;
+        }
+
+        ul {
+            margin: 0 0 15px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+            font-size: 13px;
+            line-height: 1.4;
+        }
+
+        .description {
+            font-style: italic;
+            color: #666;
+            font-size: 13px;
+            margin: 8px 0;
+            line-height: 1.4;
+        }
+
+        .development-box {
+            background: #2c3e50;
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 816px;
+            background: #3498db;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
     </style>
+</head>
+<body>
+    <div class="page">
+        <div class="hero-section">
+            <img id="heroImage" alt="Estate Vista" style="width:100%; height:100%; object-fit:cover;">
+            <div class="hero-overlay">
+                <h1>Crystal Streams</h1>
+                <p style="font-size: 24px; margin: 10px 0;">20 Pristine Acres of Ozark Paradise</p>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="left-column">
+                <div class="feature-card">
+                    <h2>NATURAL WONDERS</h2>
+                    
+                    <div class="photo-grid">
+                        <div class="photo-box" style="height: 180px;">
+                            <img id="featureImage1" alt="Natural Feature">
+                        </div>
+                        <div class="photo-box" style="height: 180px;">
+                            <img id="featureImage2" alt="Natural Feature">
+                        </div>
+                    </div>
+
+                    <h3>Water Features</h3>
+                    <ul>
+                        <li>Three natural springs, including one that provides year-round water to the cabin</li>
+                        <li>¼ mile of scenic creek frontage with seasonal flows</li>
+                        <li>Magnificent primary waterfall</li>
+                        <li>Several seasonal cascades and water flows</li>
+                        <li>Serene pond perfect for reflection or recreation</li>
+                    </ul>
+                    <p class="description">A reliable natural spring serves as the cabin's water source, while additional seasonal springs and rainfall transform the creek into a dynamic landscape of flowing water and cascades.</p>
+
+                    <div class="photo-box" style="height: 200px;">
+                        <img id="featureImage3" alt="Natural Feature">
+                    </div>
+
+                    <h3>Geographic Features</h3>
+                    <ul>
+                        <li>Two fascinating caves to explore</li>
+                        <li>Impressive limestone bluffs</li>
+                        <li>Ancient forest with mature trees</li>
+                        <li>Natural hiking trails throughout</li>
+                        <li>Multiple private swimming areas</li>
+                    </ul>
+                    <p class="description">One cave features an easily accessible large chamber, perfect for exploration or unique entertainment spaces.</p>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="feature-card">
+                    <h2>EXISTING INFRASTRUCTURE</h2>
+                    
+                    <div class="photo-box" style="height: 200px;">
+                        <img id="featureImage4" alt="Property Feature">
+                    </div>
+
+                    <h3>Main Residence</h3>
+                    <ul>
+                        <li>Charming two-story cabin</li>
+                        <li>Freshly painted interior</li>
+                        <li>Versatile studio space</li>
+                        <li>Spacious creative loft</li>
+                    </ul>
+                    
+                    <h3>Property Amenities</h3>
+                    <ul>
+                        <li>Multiple level building sites</li>
+                        <li>Dual septic systems</li>
+                        <li>High-speed internet</li>
+                        <li>Storage/woodshed</li>
+                        <li>Garden & orchard areas</li>
+                    </ul>
+                </div>
+
+                <div class="development-box">
+                    <h2 style="color: white; border-bottom-color: #4a90e2;">DEVELOPMENT POTENTIAL</h2>
+                    <div class="highlights-grid">
+                        <ul>
+                            <li>Luxury Wilderness Retreat</li>
+                            <li>Private Family Estate</li>
+                            <li>Exclusive Event Venue</li>
+                        </ul>
+                        <ul>
+                            <li>Artist or Writer's Haven</li>
+                            <li>Wellness Sanctuary</li>
+                            <li>Adventure Tourism Site</li>
+                        </ul>
+                    </div>
+                    <p style="color: #a8c6ff; font-style: italic; margin-top: 15px;">Multiple building sites offer flexibility for additional structures while preserving the natural beauty.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div style="font-size: 20px; font-weight: bold;">One of the Most Spectacular Properties in the Ozarks</div>
+            <div style="font-size: 16px; margin-top: 5px;">Schedule Your Private Showing Today • [Contact Information]</div>
+        </div>
+    </div>
+
     <script>
         const baseUrl = 'https://githubaccountadmin.github.io/crystalstreams/';
         const imageFiles = [
@@ -118,111 +308,5 @@
 
         window.onload = loadRandomImages;
     </script>
-</head>
-<body>
-    <div class="page">
-        <!-- Hero Section -->
-        <div class="hero-section">
-            <img id="heroImage" alt="Estate Vista" style="width:100%; height:100%; object-fit:cover;">
-            <div class="hero-overlay">
-                <h1>Hidden Valley Springs Estate</h1>
-                <p style="font-size: 24px; margin: 10px 0;">20 Pristine Acres of Ozark Paradise</p>
-            </div>
-        </div>
-
-        <div class="main-content">
-            <!-- Left Column -->
-            <div class="left-column">
-                <div class="feature-card">
-                    <h2>NATURAL WONDERS</h2>
-                    
-                    <div class="photo-grid">
-                        <div class="photo-box" style="height: 180px;">
-                            <img id="featureImage1" alt="Natural Feature" style="width:100%; height:100%; object-fit:cover;">
-                        </div>
-                        <div class="photo-box" style="height: 180px;">
-                            <img id="featureImage2" alt="Natural Feature" style="width:100%; height:100%; object-fit:cover;">
-                        </div>
-                    </div>
-
-                    <h3>Water Features</h3>
-                    <ul>
-                        <li>Three natural springs, including one that provides year-round water to the cabin</li>
-                        <li>¼ mile of scenic creek frontage with seasonal flows</li>
-                        <li>Magnificent primary waterfall</li>
-                        <li>Several seasonal cascades and water flows</li>
-                        <li>Two serene ponds perfect for reflection or recreation</li>
-                    </ul>
-                    <p class="description">A reliable natural spring serves as the cabin's water source, while additional seasonal springs and rainfall transform the creek into a dynamic landscape of flowing water and cascades.</p>
-
-                    <div class="photo-box" style="height: 200px;">
-                        <img id="featureImage3" alt="Natural Feature" style="width:100%; height:100%; object-fit:cover;">
-                    </div>
-
-                    <h3>Geographic Features</h3>
-                    <ul>
-                        <li>Two fascinating caves to explore</li>
-                        <li>Impressive limestone bluffs</li>
-                        <li>Ancient forest with mature trees</li>
-                        <li>Natural hiking trails throughout</li>
-                        <li>Multiple private swimming areas</li>
-                    </ul>
-                    <p class="description">One cave features an easily accessible large chamber, perfect for exploration or unique entertainment spaces.</p>
-                </div>
-            </div>
-
-            <!-- Right Column -->
-            <div class="right-column">
-                <div class="feature-card">
-                    <h2>EXISTING INFRASTRUCTURE</h2>
-                    
-                    <div class="photo-box" style="height: 200px;">
-                        <img id="featureImage4" alt="Property Feature" style="width:100%; height:100%; object-fit:cover;">
-                    </div>
-
-                    <h3>Main Residence</h3>
-                    <ul>
-                        <li>Charming two-story cabin</li>
-                        <li>Freshly painted interior</li>
-                        <li>Versatile studio space</li>
-                        <li>Spacious creative loft</li>
-                    </ul>
-                    
-                    <h3>Property Amenities</h3>
-                    <ul>
-                        <li>Multiple level building sites</li>
-                        <li>Dual septic systems</li>
-                        <li>High-speed internet</li>
-                        <li>Storage/woodshed</li>
-                        <li>Garden & orchard areas</li>
-                    </ul>
-                </div>
-
-                <!-- Development Box -->
-                <div class="development-box">
-                    <h2 style="color: white; border-bottom-color: #4a90e2;">DEVELOPMENT POTENTIAL</h2>
-                    <div class="highlights-grid">
-                        <ul style="color: white;">
-                            <li>Luxury Wilderness Retreat</li>
-                            <li>Private Family Estate</li>
-                            <li>Exclusive Event Venue</li>
-                        </ul>
-                        <ul style="color: white;">
-                            <li>Artist or Writer's Haven</li>
-                            <li>Wellness Sanctuary</li>
-                            <li>Adventure Tourism Site</li>
-                        </ul>
-                    </div>
-                    <p style="color: #a8c6ff; font-style: italic;">Multiple building sites offer flexibility for additional structures while preserving the natural beauty.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Footer -->
-        <div class="footer">
-            <div style="font-size: 20px; font-weight: bold;">One of the Most Spectacular Properties in the Ozarks</div>
-            <div style="font-size: 16px; margin-top: 5px;">Schedule Your Private Showing Today • [Contact Information]</div>
-        </div>
-    </div>
 </body>
 </html>
