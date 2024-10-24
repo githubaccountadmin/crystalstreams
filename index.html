@@ -168,9 +168,8 @@
 </head>
 <body>
     <div class="page">
-        <!-- Hero Section -->
         <div class="hero-section">
-            <img id="heroImage" alt="Estate Vista" style="width:100%; height:100%; object-fit:cover;">
+            <img src="https://githubaccountadmin.github.io/crystalstreams/photo_2024-10-23_21-33-35.jpg" alt="Estate Vista" style="width:100%; height:100%; object-fit:cover;">
             <div class="hero-overlay">
                 <h1>Crystal Streams</h1>
                 <p style="font-size: 24px; margin: 10px 0;">20 Pristine Acres of Ozark Paradise</p>
@@ -184,10 +183,10 @@
                     
                     <div class="photo-grid">
                         <div class="photo-box" style="height: 180px;">
-                            <img id="featureImage1" alt="Natural Feature">
+                            <img src="https://githubaccountadmin.github.io/crystalstreams/photo_2024-10-23_21-27-58.jpg" alt="Natural Feature">
                         </div>
                         <div class="photo-box" style="height: 180px;">
-                            <img id="featureImage2" alt="Natural Feature">
+                            <img src="https://githubaccountadmin.github.io/crystalstreams/photo_2024-10-23_21-39-09.jpg" alt="Natural Feature">
                         </div>
                     </div>
 
@@ -202,7 +201,7 @@
                     <p class="description">A reliable natural spring serves as the cabin's water source, while additional seasonal springs and rainfall transform the creek into a dynamic landscape of flowing water and cascades.</p>
 
                     <div class="photo-box" style="height: 200px;">
-                        <img id="featureImage3" alt="Natural Feature">
+                        <img src="https://githubaccountadmin.github.io/crystalstreams/photo_2024-10-23_21-33-43%20(2).jpg" alt="Natural Feature">
                     </div>
 
                     <h3>Geographic Features</h3>
@@ -222,7 +221,7 @@
                     <h2>EXISTING INFRASTRUCTURE</h2>
                     
                     <div class="photo-box" style="height: 200px;">
-                        <img id="featureImage4" alt="Property Feature">
+                        <img src="https://githubaccountadmin.github.io/crystalstreams/photo_2024-10-23_21-33-40.jpg" alt="Property Feature">
                     </div>
 
                     <h3>Main Residence</h3>
@@ -267,59 +266,5 @@
             <div style="font-size: 16px; margin-top: 5px;">Schedule Your Private Showing Today • [Contact Information]</div>
         </div>
     </div>
-
-    <script>
-        const baseUrl = 'https://githubaccountadmin.github.io/crystalstreams/';
-        const imageFiles = [
-            'photo_2024-10-23_21-27-15.jpg',
-            'photo_2024-10-23_21-27-42.jpg',
-            'photo_2024-10-23_21-27-58.jpg',
-            'photo_2024-10-23_21-33-25 (2).jpg',
-            'photo_2024-10-23_21-33-25.jpg',
-            'photo_2024-10-23_21-33-31.jpg',
-            'photo_2024-10-23_21-33-35.jpg',
-            'photo_2024-10-23_21-33-40 (2).jpg',
-            'photo_2024-10-23_21-33-40.jpg',
-            'photo_2024-10-23_21-33-43 (2).jpg',
-            'photo_2024-10-23_21-33-43.jpg',
-            'photo_2024-10-23_21-39-09.jpg',
-            'photo_2024-10-23_21-40-25.jpg',
-            'photo_2024-10-23_21-41-36.jpg',
-            'photo_2024-10-23_21-43-02.jpg',
-            'photo_2024-10-23_21-43-17.jpg',
-            'photo_2024-10-23_21-44-19.jpg',
-            'photo_2024-10-23_21-44-38.jpg',
-            'photo_2024-10-23_21-45-31.jpg',
-            'photo_2024-10-23_21-54-56.jpg',
-            'photo_2024-10-23_22-49-02.jpg',
-            'photo_2024-10-23_22-55-19.jpg',
-            'photo_2024-10-23_22-56-09.jpg',
-            'photo_2024-10-23_22-58-40.jpg',
-            'photo_2024-10-23_22-59-20.jpg',
-            'photo_2024-10-23_22-59-43.jpg',
-            'photo_2024-10-23_23-02-50.jpg',
-            'photo_2024-10-23_23-03-03.jpg',
-            'photo_2024-10-23_23-03-46.jpg',
-            'photo_2024-10-23_23-07-19.jpg',
-            'photo_2024-10-23_23-08-32.jpg'
-        ];
-
-        function getRandomImages(count) {
-            const shuffled = [...imageFiles].sort(() => 0.5 - Math.random());
-            return shuffled.slice(0, count);
-        }
-
-        function loadRandomImages() {
-            const selectedImages = getRandomImages(5);
-            
-            document.getElementById('heroImage').src = baseUrl + selectedImages[0];
-            document.getElementById('featureImage1').src = baseUrl + selectedImages[1];
-            document.getElementById('featureImage2').src = baseUrl + selectedImages[2];
-            document.getElementById('featureImage3').src = baseUrl + selectedImages[3];
-            document.getElementById('featureImage4').src = baseUrl + selectedImages[4];
-        }
-
-        window.onload = loadRandomImages;
-    </script>
 </body>
 </html>
