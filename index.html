@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        .page {
+            width: 816px;
+            height: 1056px;
+            position: relative;
+            background: white;
+            overflow: hidden;
+            padding-bottom: 80px; /* Space for footer */
+        }
+        .hero-banner {
+            background: #2c3e50;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+        .hero-content {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7));
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .main-layout {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 20px;
+            padding: 0 30px;
+            margin-bottom: 100px; /* Extra space for footer */
+        }
+        .natural-wonders {
+            grid-column: 1 / 7;
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 20px;
+            border-left: 5px solid #3498db;
+        }
+        .infrastructure {
+            grid-column: 7 / 13;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .infra-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 20px;
+            border-left: 5px solid #2ecc71;
+        }
+        .development-card {
+            background: #2c3e50;
+            color: white;
+            border-radius: 15px;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 42px;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        h2 {
+            font-size: 24px;
+            color: #2c3e50;
+            margin: 0 0 15px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #3498db;
+        }
+        h3 {
+            font-size: 18px;
+            color: #2c3e50;
+            margin: 15px 0 10px 0;
+        }
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+        .description {
+            font-style: italic;
+            color: #666;
+            font-size: 13px;
+            margin: 10px 0;
+            line-height: 1.5;
+            padding-left: 10px;
+            border-left: 3px solid #e0e0e0;
+        }
+        .feature-images {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin: 15px 0;
+        }
+        .feature-images img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .development-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .development-grid ul {
+            margin: 0;
+        }
+        .development-grid li {
+            color: white;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 816px;
+            background: #3498db;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        .white-text {
+            color: white;
+            border-bottom-color: #4a90e2;
+        }
+        .highlight-text {
+            color: #a8c6ff;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="hero-banner">
+            <img src="/api/placeholder/816/200" alt="Estate Overview" style="width:100%; height:100%; object-fit:cover;">
+            <div class="hero-content">
+                <h1>Hidden Valley Springs Estate</h1>
+                <p style="font-size: 24px; margin: 10px 0;">20 Pristine Acres of Ozark Paradise</p>
+            </div>
+        </div>
+
+        <div class="main-layout">
+            <section class="natural-wonders">
+                <h2>NATURAL WONDERS</h2>
+                
+                <div class="feature-images">
+                    <img src="/api/placeholder/350/200" alt="Water Feature">
+                    <img src="/api/placeholder/350/200" alt="Landscape">
+                </div>
+
+                <h3>Water Features</h3>
+                <ul>
+                    <li>Three natural springs, including one that provides year-round water to the cabin</li>
+                    <li>¼ mile of scenic creek frontage with seasonal flows</li>
+                    <li>Magnificent primary waterfall</li>
+                    <li>Several seasonal cascades and water flows</li>
+                    <li>Two serene ponds perfect for reflection or recreation</li>
+                </ul>
+                <p class="description">A reliable natural spring serves as the cabin's water source, while additional seasonal springs and rainfall transform the creek into a dynamic landscape of flowing water and cascades.</p>
+
+                <h3>Geographic Features</h3>
+                <ul>
+                    <li>Two fascinating caves to explore</li>
+                    <li>Impressive limestone bluffs</li>
+                    <li>Ancient forest with mature trees</li>
+                    <li>Natural hiking trails throughout</li>
+                    <li>Multiple private swimming areas</li>
+                </ul>
+                <p class="description">One cave features an easily accessible large chamber, perfect for exploration or unique entertainment spaces.</p>
+            </section>
+
+            <div class="infrastructure">
+                <div class="infra-card">
+                    <h2>EXISTING INFRASTRUCTURE</h2>
+                    <h3>Main Residence</h3>
+                    <ul>
+                        <li>Charming two-story cabin</li>
+                        <li>Freshly painted interior</li>
+                        <li>Versatile studio space</li>
+                        <li>Spacious creative loft</li>
+                    </ul>
+
+                    <h3>Property Amenities</h3>
+                    <ul>
+                        <li>Multiple level building sites</li>
+                        <li>Dual septic systems</li>
+                        <li>High-speed internet</li>
+                        <li>Storage/woodshed</li>
+                        <li>Garden & orchard areas</li>
+                    </ul>
+                </div>
+
+                <div class="development-card">
+                    <h2 class="white-text">DEVELOPMENT POTENTIAL</h2>
+                    <div class="development-grid">
+                        <ul>
+                            <li>Luxury Wilderness Retreat</li>
+                            <li>Private Family Estate</li>
+                            <li>Exclusive Event Venue</li>
+                        </ul>
+                        <ul>
+                            <li>Artist or Writer's Haven</li>
+                            <li>Wellness Sanctuary</li>
+                            <li>Adventure Tourism Site</li>
+                        </ul>
+                    </div>
+                    <p class="highlight-text">Multiple building sites offer flexibility for additional structures while preserving the natural beauty. Perfect opportunity for sustainable luxury development.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div style="font-size: 20px; font-weight: bold;">One of the Most Spectacular Properties in the Ozarks</div>
+            <div style="font-size: 16px; margin-top: 5px;">Schedule Your Private Showing Today • [Contact Information]</div>
+        </div>
+    </div>
+</body>
+</html>
