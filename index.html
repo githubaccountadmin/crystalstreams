@@ -27,7 +27,7 @@
         }
 
         .hero-section {
-            height: 280px;
+            height: 250px;
             position: relative;
         }
 
@@ -47,28 +47,28 @@
             grid-template-columns: 60% 40%;
             gap: 15px;
             padding: 15px;
-            height: calc(100% - 380px);
+            height: calc(100% - 350px);
         }
 
         .feature-card {
             background: #f8f9fa;
             border-radius: 10px;
             padding: 15px;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             height: fit-content;
         }
 
         .photo-box {
             border-radius: 8px;
             overflow: hidden;
-            margin: 8px 0;
+            margin: 6px 0;
         }
 
         .photo-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-            margin: 10px 0;
+            gap: 8px;
+            margin: 8px 0;
         }
 
         h1 {
@@ -78,44 +78,45 @@
         }
 
         h2 {
-            font-size: 20px;
+            font-size: 19px;
             color: #2c3e50;
-            margin: 0 0 12px 0;
-            padding-bottom: 6px;
+            margin: 0 0 10px 0;
+            padding-bottom: 5px;
             border-bottom: 2px solid #3498db;
         }
 
         h3 {
-            font-size: 16px;
+            font-size: 15px;
             color: #2c3e50;
-            margin: 10px 0 6px 0;
+            margin: 8px 0 5px 0;
         }
 
         ul {
-            margin: 0 0 12px 0;
+            margin: 0 0 10px 0;
             padding-left: 20px;
         }
 
         li {
-            margin-bottom: 4px;
-            font-size: 13px;
-            line-height: 1.4;
+            margin-bottom: 3px;
+            font-size: 12px;
+            line-height: 1.3;
         }
 
         .description {
             font-style: italic;
             color: #666;
-            font-size: 12px;
-            margin: 6px 0;
-            line-height: 1.4;
+            font-size: 11px;
+            margin: 5px 0;
+            line-height: 1.3;
         }
 
         .development-box {
             background: #2c3e50;
             color: white;
             border-radius: 10px;
-            padding: 15px;
-            margin-top: 15px;
+            padding: 12px;
+            margin-top: 12px;
+            margin-bottom: 45px;
         }
 
         .footer {
@@ -125,8 +126,9 @@
             right: 0;
             background: #3498db;
             color: white;
-            padding: 12px 0;
+            padding: 10px 0;
             text-align: center;
+            z-index: 1;
         }
 
         img {
@@ -135,23 +137,17 @@
             object-fit: cover;
         }
 
-        /* Page 2 Styles */
+        /* Summary Page Styles */
         .summary-page {
-            display: flex;
-            flex-direction: column;
             padding: 30px;
             box-sizing: border-box;
         }
 
         .summary-header {
             text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .summary-content {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #3498db;
         }
 
         .dev-section {
@@ -159,22 +155,30 @@
             color: white;
             border-radius: 10px;
             padding: 20px;
-            margin-bottom: 20px;
+            margin: 20px 0;
+        }
+
+        .dev-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 25px;
         }
 
         .dev-option {
             background: #f8f9fa;
             padding: 15px;
             border-radius: 8px;
+            border-left: 4px solid #3498db;
             margin-bottom: 15px;
         }
 
-        .summary-footer {
+        .contact-section {
             text-align: center;
-            padding: 20px;
             background: #f8f9fa;
+            padding: 20px;
             border-radius: 10px;
-            margin-top: auto;
+            margin-top: 30px;
         }
     </style>
 </head>
@@ -193,11 +197,12 @@
             <div class="left-column">
                 <div class="feature-card">
                     <h2>NATURAL WONDERS</h2>
+                    
                     <div class="photo-grid">
-                        <div class="photo-box" style="height: 150px;">
+                        <div class="photo-box" style="height: 140px;">
                             <img src="https://githubaccountadmin.github.io/crystalstreams/photo_2024-10-23_21-27-58.jpg" alt="Natural Feature">
                         </div>
-                        <div class="photo-box" style="height: 150px;">
+                        <div class="photo-box" style="height: 140px;">
                             <img src="https://githubaccountadmin.github.io/crystalstreams/photo_2024-10-23_21-39-09.jpg" alt="Natural Feature">
                         </div>
                     </div>
@@ -212,7 +217,7 @@
                     </ul>
                     <p class="description">A reliable natural spring serves as the cabin's water source, while additional seasonal springs and rainfall transform the creek into a dynamic landscape of flowing water and cascades.</p>
 
-                    <div class="photo-box" style="height: 180px;">
+                    <div class="photo-box" style="height: 160px;">
                         <img src="https://githubaccountadmin.github.io/crystalstreams/photo_2024-10-23_21-33-43%20(2).jpg" alt="Natural Feature">
                     </div>
 
@@ -231,7 +236,8 @@
             <div class="right-column">
                 <div class="feature-card">
                     <h2>EXISTING INFRASTRUCTURE</h2>
-                    <div class="photo-box" style="height: 180px;">
+                    
+                    <div class="photo-box" style="height: 160px;">
                         <img src="https://githubaccountadmin.github.io/crystalstreams/30a7e258e45ccc75a31355e42ae6e83d-uncropped_scaled_within_1536_1152.jpeg" alt="Property Feature">
                     </div>
 
@@ -254,7 +260,7 @@
                 </div>
 
                 <div class="development-box">
-                    <h2 style="color: white; border-bottom-color: #4a90e2;">DEVELOPMENT POTENTIAL</h2>
+                    <h2 style="color: white; border-bottom-color: #4a90e2; margin-bottom: 8px;">DEVELOPMENT POTENTIAL</h2>
                     <ul style="columns: 2;">
                         <li>Luxury Wilderness Retreat</li>
                         <li>Private Family Estate</li>
@@ -268,8 +274,8 @@
         </div>
 
         <div class="footer">
-            <div style="font-size: 20px; font-weight: bold;">One of the Most Spectacular Properties in the Ozarks</div>
-            <div style="font-size: 16px; margin-top: 5px;">Schedule Your Private Showing Today • [Contact Information]</div>
+            <div style="font-size: 18px; font-weight: bold;">One of the Most Spectacular Properties in the Ozarks</div>
+            <div style="font-size: 14px; margin-top: 4px;">Schedule Your Private Showing Today • [Contact Information]</div>
         </div>
     </div>
 
@@ -278,7 +284,7 @@
         <div class="summary-header">
             <h1>Crystal Streams: A Premier Development Opportunity</h1>
             <p style="font-size: 18px; color: #666;">Investment & Development Potential</p>
-            <p style="font-size: 16px; line-height: 1.6; margin: 20px 0;">
+            <p style="font-size: 14px; line-height: 1.6;">
                 This exceptional 20-acre property presents a rare investment opportunity, offering the perfect canvas for 
                 multiple development scenarios while maintaining its natural splendor. With its unique combination of 
                 dramatic natural features and existing infrastructure, Crystal Streams is perfectly positioned for various 
@@ -288,7 +294,7 @@
 
         <div class="dev-section">
             <h2 style="color: white;">Development Advantages</h2>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
                 <ul style="color: white;">
                     <li>Multiple pre-established building sites</li>
                     <li>Dual septic systems in place</li>
@@ -302,7 +308,7 @@
             </div>
         </div>
 
-        <div class="summary-content">
+        <div class="dev-grid">
             <div class="dev-option">
                 <h3>Luxury Wilderness Resort</h3>
                 <ul>
@@ -344,7 +350,7 @@
             </div>
         </div>
 
-        <div class="summary-footer">
+        <div class="contact-section">
             <h2>Explore This Exceptional Opportunity</h2>
             <p>Contact us to discuss development possibilities and arrange a private showing.</p>
             <p style="font-size: 18px; margin-top: 10px;">[Contact Information]</p>
